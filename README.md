@@ -8,5 +8,3 @@ This is portfolio website and I added the following functions
 Issue:
 ・
 ・
-# portfolio
-# portfolio_web
