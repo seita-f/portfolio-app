@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+ <head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+     <!-- CSS Link !-->
+     <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />_
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <!-- Responsive !-->
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+     <!-- JS Link !-->
+     <script src="{% static 'js/mystyle.js' %}"></script>
+ </head>
+ <body>
+    <!-- Menu Bar !-->
+    {% block contents  %}
+    <!-- About Me !-->
+    {% endblock %}
+ </body>
+</html>

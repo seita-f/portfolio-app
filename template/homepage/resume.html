@@ -1,0 +1,85 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+{% block contents  %}
+
+<!-- Menu Bar (I put here because we have "current") !-->
+<header>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="{% url 'homepage:about' %}">ABOUT</a></li>
+            <li class="current"><a href="{% url 'homepage:resume' %}">RESUME</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Resume contents !-->
+<div class="split">
+    <div class="split-item split-left">
+        <div class="split-left__inner">
+            <div class="personal_contents">
+                {% for context in personal|slice:"10" %}
+                    <h1>{{ context.name }}</h1>
+                    <h2>{{ context.profession }}</h2>
+                {% endfor %}
+                <br>
+                <h2 class="contact_h2">Contact</h2>
+                <hr class="line">
+                <div class="contact">
+                    {% for context in personal|slice:"10" %}
+                    <h4>Phone Number:</h4>
+                    <p>{{ context.phone_number }}</p>
+                    <h4>Email:</h4>
+                    <p>{{ context.email_address }}</p>
+                    {% endfor %}
+
+                    {% for context in social_media %}
+                    <h4>{{ context.name_social_media }}:</h4>
+                    <p>{{ context.link }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div><!--split-left__inner-->
+    </div><!--split-item split-left-->
+    <div class="split-item split-right">
+        <div class="split-right__inner">
+            <!-- Job Experience !-->
+                <h2>Job Experience</h2>
+                <hr class="line">
+                <div class="textfiled">
+                {% for context in job %}
+                    <h3>{{ context.role }} &nbsp;<span style="font-size:small; font-weight: normal;">{{ context.year }}</span></h3>
+                    <h3>{{ context.company }}</h3>
+                    <p>{{ context.text|safe|linebreaks }}</h5>
+                    <hr>
+                {% endfor %}
+                </div>
+                <br><br>
+            <!-- Education !-->
+                <h2>Education</h2>
+                <hr class="line">
+                <div class="textfield">
+                {% for context in education %}
+                    <h3>{{ context.school }} &nbsp; <span style="font-size:small; font-weight: normal;">{{ context.year }}</span></h3>
+                    <p>{{ context.text|safe|linebreaks }} </p>
+                    <hr>
+                {% endfor %}
+                </div>
+                <br><br>
+            <!-- Skill !-->
+                <h2>Skills</h2>
+                <hr class="line">
+                {% for context in skill %}
+                    <p>{{ context.skill_name }}</p>
+                    <div class="container">
+                        <div class="skills" style='width: {{ context.percentage }}%; background-color: #6699FF;'>{{ context.percentage }}%</div>
+                    </div>
+                {% endfor %}
+
+        </div><!--split-right__inner-->
+    </div><!--split-item split-right-->
+</div><!--split-->
+<br>
+<br>
+<br>
+
+{% endblock %}

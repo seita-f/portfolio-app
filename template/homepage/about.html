@@ -1,0 +1,53 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+{% block contents  %}
+
+        <!-- Menu Bar (I put here because we have "current") !-->
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li class="current"><a href="{% url 'homepage:about' %}">ABOUT</a></li>
+                    <li><a href="{% url 'homepage:resume' %}">RESUME</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Test About Me  !-->
+        <div class="about-split">
+            <div class="about-split-item about-split-left">
+                <div class="about-split-left__inner">
+                    <div class="personal_contents">
+                        <div class="item">
+                            <br>
+                            {% for item in image %}
+                                <img src="{{ item.image.url }}">
+                            {% endfor %}
+                            <!--
+                            <img src="{% static 'image/profile.jpg' %}" alt="invalid">
+                            !-->
+                        </div>
+                        <h3>Ola Jarosz</h3>
+                    </div>
+                </div><!--split-left__inner-->
+            </div><!--split-item split-left-->
+            <div class="about-split-item about-split-right">
+                <div class="about-split-right__inner">
+                    <div class="item">
+                        <br>
+                        {% for context in me %}
+                        <p>{{ context.text |safe|linebreaks }}</p>
+                        {% endfor %}
+                    </div>
+                </div><!--split-right__inner-->
+            </div><!--split-item split-right-->
+        </div><!--split-->
+
+        <br><br>
+
+        <!-- フッター !-->
+        <footer>
+            <p>Copyright 2022(C)</p>
+        </footer>
+
+{% endblock %}
+

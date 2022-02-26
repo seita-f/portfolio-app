@@ -1,0 +1,336 @@
+/***************************
+        Base.html
+***************************/
+body{
+    margin: 10px 120px 0px 120px;
+    background-color: #EBF4F4;
+    color: #333333;
+}
+
+@media screen and (max-width: 480px) {
+	/* smaller than 480px（Phone） */
+	.body{
+	    background-color: white;
+	}
+}
+
+.text_filed{
+    line-height: 2;
+}
+
+@media screen and (max-width: 959px) {
+    body{
+         margin: 10 50px 10px 50px;
+    }
+	/* smaller than 959px（tablet） */
+}
+@media screen and (max-width: 480px) {
+	/* smaller than 480pxCSS（Phone） */
+	body{
+         margin: 10px 20px 10px 20px;
+    }
+}
+
+header{
+    margin: 130px 40px 50px 0px;
+    margin-bottom: 80px;
+    font-size: 17px;
+    color: black;
+    width:auto;
+    text-align : center;
+}
+
+@media screen and (max-width: 480px) {
+	/* smaller than 480px（Phone） */
+	header{
+        margin: 20px 30px 30px 0px;
+        font-size: 10px;
+        color: black;
+        width:auto;
+        text-align : center;
+    }
+}
+
+/***************************
+        about.html
+***************************/
+/* Menu Bar */
+.nav_links li{
+    display: inline-block;
+    align-items: center;
+    color: black;
+}
+
+.nav_links li a{
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_links li.current{
+    border-bottom: 2px solid black;
+}
+
+.nav_links li:hover{
+color: #E7DA66;
+border-bottom: 2px solid black;
+}
+
+/* profile */
+.personal_contents{
+   text-align: center; /* itemの文字も中央に寄ってしまう */
+   text-color: #333333;
+}
+
+/* profile_pic */
+.personal_contents img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    object-fit: cover;   /* 画像が潰れるのを防ぐ */
+    text-align: center;
+}
+
+/* text about me */
+.item p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* split (about me screen) */
+.about-split{
+    display: table;
+    width: 100%;
+}
+.about-split-item{
+    display: table-cell;
+    padding: 30px;
+    width: 50%;
+}
+.about-split-left{
+    width: 23%;
+}
+
+.about-split-right{
+    background: #EBF4F4;
+}
+
+.about-split-left__inner{
+    height: 100%;
+    width: 100%;
+}
+
+.about-split-right__inner{
+    height: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .about-split{
+        display: block;
+    }
+    .about-split-item{
+        display: block;
+        width: auto;
+        padding: 0;
+    }
+    .about-split-left__inner{
+        position: inherit;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .about-split{
+        display: block;
+    }
+    .about-split-item{
+        display: block;
+        width: auto;
+    }
+    .about-split-left__inner{
+        position: inherit;
+        width: auto;
+    }
+    .about-split-right{
+        padding: 0px 20px 0px 20px;
+    }
+    /* test about me */
+    .item p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+/* footer */
+footer{
+    margin: 20px 40px 40px 40px;
+}
+
+footer p{
+    text-align: right;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 480px) {
+	/* smaller than 480px（Phone） */
+    footer p{
+        text-align: right;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+}
+
+/***************************
+        resume.html
+***************************/
+/* Split  */
+.split{
+    display: table;
+    width: 100%;
+}
+.split-item{
+    display: table-cell;
+    padding: 30px;
+    width: 50%;
+}
+.split-left{
+    background: white;
+    width: 23%;
+    /* border: 1px solid black;*/
+    border-right: 20px solid #EBF4F4;
+}
+
+.split-right{
+    background: white;
+    /* border-right: 20px solid #EBF4F4; */
+}
+
+
+.split-left__inner{
+    height: 100%;
+    width: 100%;
+}
+
+.line{
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.split-right__inner{
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.split-right__inner h2{
+    color:  #0000A8
+}
+
+.left_space{
+    padding-left: 0px;
+}
+
+.textfield p{
+    line-height: 1.5;
+}
+
+/* contact */
+.contact_h2{
+    color:  #0000A8
+}
+
+.contact{
+    text-align: left;
+}
+
+@media screen and (max-width:1024px) {
+    .split{
+        display: block;
+    }
+    .split-item{
+        display: block;
+        width: auto;
+    }
+
+    .split-left__inner{
+        position: inherit;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 959px) {
+
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	/* smaller than 480px（Phone） */
+	.resume_body{
+         margin: 0 0px 100px 0px;
+    }
+    .split-right{
+        background: white;
+        /* border-right: 20px solid #EBF4F4; */
+    }
+    .split-left{
+        background: white;
+        border-right: 0px solid #EBF4F4;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    h4{
+        font-size: 11px;
+    }
+
+    .contact{
+        line-height: 1.0;
+    }
+    /* Contact */
+    .contact p{
+        font-size: 15px;
+    }
+
+    .split-right__inner{
+        height: auto;
+        padding-bottom: 15px;
+    }
+}
+
+/* Skills */
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #C0C0C0; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: black; /* White text color */
+}
+
+
+
+
