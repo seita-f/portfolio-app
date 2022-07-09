@@ -1,6 +1,7 @@
 /***************************
         Base.html
 ***************************/
+/* Body CSS */
 body{
     margin: 10px 120px 0px 120px;
     background-color: #EBF4F4;
@@ -14,16 +15,13 @@ body{
 	}
 }
 
-.text_filed{
-    line-height: 2;
-}
-
 @media screen and (max-width: 959px) {
     body{
-         margin: 10 50px 10px 50px;
+         margin: 10px 50px 10px 50px;
     }
 	/* smaller than 959px（tablet） */
 }
+
 @media screen and (max-width: 480px) {
 	/* smaller than 480pxCSS（Phone） */
 	body{
@@ -31,6 +29,11 @@ body{
     }
 }
 
+.text_filed{
+    line-height: 2;
+}
+
+/* Header CSS */
 header{
     margin: 130px 40px 50px 0px;
     margin-bottom: 80px;
@@ -41,13 +44,10 @@ header{
 }
 
 @media screen and (max-width: 480px) {
-	/* smaller than 480px（Phone） */
-	header{
-        margin: 20px 30px 30px 0px;
-        font-size: 10px;
-        color: black;
-        width:auto;
-        text-align : center;
+    /* smaller than 480px（Phone） */
+    header {
+        margin: 15px 40px 50px 0px;
+        margin-bottom: 10px;
     }
 }
 
@@ -74,6 +74,18 @@ header{
 .nav_links li:hover{
 color: #E7DA66;
 border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 480px) {
+    .nav_links li{
+        font-size: 15px;
+    }
+
+    .nav_links li a{
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+    }
 }
 
 /* profile */
@@ -202,9 +214,7 @@ footer p{
 
 .split-right{
     background: white;
-    /* border-right: 20px solid #EBF4F4; */
 }
-
 
 .split-left__inner{
     height: 100%;
@@ -251,6 +261,10 @@ footer p{
         display: block;
         width: auto;
     }
+    
+    .split-left{
+        border-right: 0px solid #EBF4F4;
+    }
 
     .split-left__inner{
         position: inherit;
@@ -259,54 +273,34 @@ footer p{
 }
 
 @media screen and (max-width: 959px) {
+    h1{font-size: 26px;}
+    h2{font-size: 18px;}
+    h3{font-size: 16px;}
+    h4{font-size: 14px;}
 
-    h1{
-        font-size: 26px;
-    }
-    h2{
-        font-size: 18px;
-    }
-    h3{
-        font-size: 16px;
-    }
-    h4{
-        font-size: 14px;
+    .resume_body{margin: 0px 0px 100px 0px;}
+
+    .split-left{
+        border-right: 0px solid #EBF4F4;
     }
 }
 
 @media screen and (max-width: 480px) {
 	/* smaller than 480px（Phone） */
-	.resume_body{
-         margin: 0 0px 100px 0px;
-    }
-    .split-right{
-        background: white;
-        /* border-right: 20px solid #EBF4F4; */
-    }
+	.resume_body{margin: 0px 0px 100px 0px;}
+
     .split-left{
-        background: white;
         border-right: 0px solid #EBF4F4;
     }
-    h1{
-        font-size: 22px;
-    }
-    h2{
-        font-size: 15px;
-    }
-    h3{
-        font-size: 13px;
-    }
-    h4{
-        font-size: 11px;
-    }
 
-    .contact{
-        line-height: 1.0;
-    }
+    h1{font-size: 22px;}
+    h2{font-size: 15px;}
+    h3{font-size: 13px;}
+    h4{font-size: 11px;}
+
+    .contact{line-height: 1.0;}
     /* Contact */
-    .contact p{
-        font-size: 15px;
-    }
+    .contact p{font-size: 15px;}
 
     .split-right__inner{
         height: auto;
