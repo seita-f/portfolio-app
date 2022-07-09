@@ -1,8 +1,24 @@
+=============
+=  English  =
+=============
+
 This is portfolio website and I added the following functions　　
 
 ・User can input his/her profile picture, information for resume. In addition to that, user can input info for education, 
   work experience, and contacts as many as they want.<br>
 ・Responsibe design<br>
+
+
+===========
+=  日本語  =
+===========
+
+ポートフォリオウェブサイト
+
+・ユーザーは自身の情報をadminページから入力可能 (写真、テキスト)
+・スキルバーは入力した数字によって自動で変化
+・レスポンシブデザイン
+
 
 Image:
 
