@@ -12,9 +12,9 @@ This is portfolio website and I added the following functions　　
 
 ポートフォリオウェブサイト
 
-・ユーザーは自身の情報をadminページから入力可能 (写真、テキスト)
-・スキルバーは入力した数字によって自動で変化
-・レスポンシブデザイン
+・ユーザーは自身の情報をadminページから入力可能 (写真、テキスト)<br>
+・スキルバーは入力した数字によって自動で変化<br>
+・レスポンシブデザイン<br>
 
 
 Image:
