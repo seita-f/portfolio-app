@@ -1,6 +1,5 @@
-=============
-=  English  =
-=============
+
+=== English ===
 
 This is portfolio website and I added the following functions　　
 
@@ -9,9 +8,7 @@ This is portfolio website and I added the following functions　　
 ・Responsibe design<br>
 
 
-===========
-=  日本語  =
-===========
+===  日本語 ===
 
 ポートフォリオウェブサイト
 
