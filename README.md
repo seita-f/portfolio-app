@@ -1,6 +1,7 @@
 
 # Portfolio (My First App Ever)
 **Since it is my first app, I assume readability is low compared to the newest project.** <br>
+<br>
 This is portfolio website and I added the following functions. <br>
 User can input his/her profile picture, information for resume. In addition to that, <br>
 user can input info for education, work experience, and contacts as many as they want.
