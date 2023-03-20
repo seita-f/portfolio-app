@@ -1,13 +1,16 @@
 
 # Portfolio (My First App Ever)
-**Since it is my first app, I assume readability is low compared to the newest project.**
+**Since it is my first app, I assume readability is low compared to the newest project.** <br>
 This is portfolio website and I added the following functions. <br>
 User can input his/her profile picture, information for resume. In addition to that, <br>
 user can input info for education, work experience, and contacts as many as they want.
 
 
 ## Environment
-
+・PyCharm (IDE) <br>
+・Python 3.9 (venv) <br>
+・Django 3.1.7 (Framework) <br>
+・HTML/CSS <br>
 
 ## Screenshot
 
